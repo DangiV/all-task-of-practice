@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var student = prompt("enter student number ");
+        var stu = [], tot = [] , takereturn = [] , givetoffe = [] ; 
+
+        for (i = 0; i < student; i++) {
+            stu[i] = parseInt(prompt("Enter toffe quantity"))
+            document.write(stu[i] + "<br>")
+
+        }    
+        
+
+        for(let i=0;i<student;i++){
+            if(stu[i] <= 15){
+                for (let j = 0; j < student; j++) {
+                    tot[i] = 15 - stu[i];
+                }
+            }
+            else{
+                if(stu[i] >= 15){
+                    for (let j = 0; j < student; j++){
+                        takereturn[i] = stu[i] - 15;
+                        givetoffe[i] = tot[i] + stu[i]
+                    }
+                }
+                document.write("Allready he have 15 toffe" + "<br>")
+
+            }
+            document.write("total toffe we will give him now : " + tot[i] + "<br>" + "<br>")
+            document.write("know he have toffe : " + givetoffe[i] + "<br>");
+            document.write("total toffe we have to take from him : " + takereturn[i] + "<br>" + "<br>")
+            
+        }
+
+    </script>
+</body>
+</html>

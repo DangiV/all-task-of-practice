@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HEllo</h1>
+  
+    <script>
+     
+        var student = prompt("enter student number ");
+        var stu = [];
+
+// Taking student toffe from user
+        for(i=0;i<student;i++){
+            stu[i] =   parseInt(prompt("Enter toffe quantity"))
+        }
+
+// showing student toffe to user which is provided by user 
+      for(i=0;i<student;i++){
+        document.write(stu[i] + "<br>")
+          }
+
+
+// taking out sum of total toffe which is entered by user
+          var  sum =0;
+        for(i=0;i<student;i++){
+            sum = sum + stu[i]
+        }
+
+        document.write("total toffe of  student is : " + sum + "<br>" + " <br>")
+
+// taking out average of total toffe2
+
+        const avg = sum / student
+
+        document.write("avg of total student's toffe  is : " + avg + "<br>" + "<br>")
+
+
+
+// take outing how many toffe we have to give them or take back them from him
+
+var tot = []
+var takereturn = []
+
+
+for(let i = 0; i<student;i++){
+    if(stu[i] <= 15){
+        for(let j =0; j<student;j++){
+          tot[i] = 15 - stu[i] ;
+        }
+    }
+    if(stu[i] > 15){
+        for(let i=0;i<student;i++){
+            takereturn[i] = stu[i] - 15;
+        }
+    }
+}
+
+// show to  user how much toffe we have to provide perchild 
+
+ for(let i = 0; i<student;i++){
+    document.write("total toffe he have give now : "+ tot[i] + "<br>" + "<br>")
+    document.write("total toffe we have to take  from him : "+ takereturn[i] + "<br>" + "<br>")
+
+ }
+
+
+ //givig equally toffe to child 15;
+
+ var givetoffe = []
+
+ for(i=0;i<student;i++){
+    givetoffe[i] = tot[i] + stu[i]
+ }
+
+
+ //display after giving toffe to each student
+
+ for(let i=0;i<student;i++){
+    if(stu[i] <= 15){
+        document.write("know he have toffe : " + givetoffe[i] + "<br>");
+    }
+    else{
+        document.write("Allready provide  more than 15 toffe to child" + "<br>")
+    }
+ }
+
+
+        
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>palindrome string</h1>
+    <script>
+        let str = prompt("Enter a string")
+       // var rev =""
+        document.write(str + "<br>")
+
+        let rev = str.split('').reverse().join()
+
+//this logic is by loop    
+        // for(let i=0;i<str.length;i++){
+        //     rev = str.charAt(i) + rev;
+        // }
+
+
+        if(str == rev){
+            document.write("Your string is palindrome")
+        }
+        else{
+            document.write("Your string is not palindrome")
+        }
+
+    </script>
+</body>
+</html>

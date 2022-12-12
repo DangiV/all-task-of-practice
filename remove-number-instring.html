@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Remove number's from string</h1>
+    <script>
+        //let str=prompt("Enter a string")
+        let str = '12Dewaas123'
+        document.write(str + "<br>")
+
+  //Simple code by regex to remove number from string 
+        // let newsrt = str.replace(/[0-9]/g,'')
+        // document.write(newsrt)
+
+       
+
+                var num  = ''
+                var str1 = ''
+
+                for(let i of str){
+                    if(i >=0 && i <=9){
+                        num = num + i
+
+                    }
+                    else
+                    {
+                        str1 = str1 + i
+                    }
+                
+                }
+                document.write("Numbers are string in :- " + num + "<br>")
+                document.write("Total string is :-" + str1)
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>Hello</h1>
+     <!-- This is Output
+      
+        * * * * *
+        *       *
+        * * * * * 
+              
+      -->
+
+    <script>
+        let n = parseInt(prompt("Enter row"))
+
+        for(i=1;i<=n;i++){
+            for(let j=1;j<=n;j++){
+                if(i==1 || i == 5 || j ==1 || j==5){
+                    document.write("* " + "&nbsp")
+                }
+                else{
+                    document.write("&nbsp &nbsp ")
+
+                }
+            }
+            document.write("<br>")
+        }
+    </script>
+</body>
+</html>
