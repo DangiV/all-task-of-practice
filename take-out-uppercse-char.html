@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>take-out all uper case present in string</h1>
+    <script>
+
+        let str = prompt("Enter a string")
+        document.write(str + "<br>")
+
+        let cap = ""
+        let indexcap = ""
+        let smallindex = ''
+        let small = ""
+
+        for(let i=0;i<str.length;i++){
+            if (str[i] >= 'A' && str[i] <= 'Z' ){
+
+                cap = cap + str[i]
+                indexcap = indexcap + i
+
+            }
+            if (str[i] >= 'a' && str[i] <= 'z' ){
+
+                small = small + str[i]
+                smallindex = smallindex + i
+             }
+        }
+        
+
+           document.write("uppercase char :- " + cap + "<br>")
+           document.write("uppercase index :- " + indexcap + "<br>")
+        document.write("lowercase char :- " + small + "<br>")   
+        document.write("lowercase charindex :- " + smallindex + "<br>")
+
+
+
+
+
+    </script>
+</body>
+</html>
